@@ -1,0 +1,57 @@
+{
+    "crbmodel": {
+        "model-name": "BenchMarkGreplLinearElliptic1",
+        "parameter_space": {
+            "dimension": "2",
+            "names": [
+                "mu0",
+                "mu1"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "-1",
+                    "max": "-0.01"
+                },
+                "mu1": {
+                    "min": "-1",
+                    "max": "-0.01"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": {
+            "eim_g": {
+                "database-filename": "EIMFunction_BenchMarkGreplLinearElliptic1\/eim_g.crbdb"
+            }
+        },
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "15"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "15"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": [
+                "1"
+            ]
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "benchmarkgrepl-linear-elliptic1-0-1-2_mesh_p1.json",
+        "database-filename": "benchmarkgrepl-linear-elliptic1-0-1-2-elements_p0.crbdb",
+        "dimension": "5"
+    },
+    "crb": {
+        "dimension": "5",
+        "name": "benchmarkgrepl-linear-elliptic1-0-1-2",
+        "database-filename": "benchmarkgrepl-linear-elliptic1-0-1-2.crbdb",
+        "has-solve-dual-problem": "true"
+    }
+}

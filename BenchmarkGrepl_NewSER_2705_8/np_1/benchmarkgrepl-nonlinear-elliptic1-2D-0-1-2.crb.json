@@ -1,0 +1,62 @@
+{
+    "crbmodel": {
+        "model-name": "BenchMarkGreplNonlinearElliptic1-2D",
+        "parameter_space": {
+            "dimension": "2",
+            "names": [
+                "mu0",
+                "mu1"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "0.01",
+                    "max": "10"
+                },
+                "mu1": {
+                    "min": "0.01",
+                    "max": "10"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": {
+            "eim_g": {
+                "database-filename": "EIMFunction_BenchMarkGreplNonlinearElliptic1-2D\/eim_g.crbdb"
+            }
+        },
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "2",
+                "1"
+            ],
+            "mMaxM": [
+                "1"
+            ],
+            "mMaxF": [
+                [
+                    "1",
+                    "2",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": [
+                "1"
+            ]
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "benchmarkgrepl-nonlinear-elliptic1-2D-0-1-2_mesh_p1.json",
+        "database-filename": "benchmarkgrepl-nonlinear-elliptic1-2D-0-1-2-elements_p0.crbdb",
+        "dimension": "15"
+    },
+    "crb": {
+        "dimension": "15",
+        "name": "benchmarkgrepl-nonlinear-elliptic1-2D-0-1-2",
+        "database-filename": "benchmarkgrepl-nonlinear-elliptic1-2D-0-1-2.crbdb",
+        "has-solve-dual-problem": "false"
+    }
+}

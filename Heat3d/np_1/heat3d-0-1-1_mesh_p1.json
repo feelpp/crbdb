@@ -1,0 +1,19 @@
+{
+    "mesh": {
+        "h5": "heat3d-0-1-1_mesh_p1.h5",
+        "partition": {
+            "n": "1"
+        },
+        "physicals": {
+            "base1": "5 2",
+            "base2": "6 2",
+            "base3": "7 2",
+            "cylinder": "8 2",
+            "mat-base1": "2 3",
+            "mat-base2": "3 3",
+            "mat-base3": "4 3",
+            "mat-central": "1 3",
+            "support-top": "9 2"
+        }
+    }
+}

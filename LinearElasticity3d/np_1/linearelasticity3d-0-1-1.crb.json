@@ -1,0 +1,72 @@
+{
+    "crbmodel": {
+        "model-name": "LinearElasticity",
+        "parameter_space": {
+            "dimension": "5",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3",
+                "mu4"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "1000000",
+                    "max": "100000000"
+                },
+                "mu1": {
+                    "min": "1000000",
+                    "max": "100000000"
+                },
+                "mu2": {
+                    "min": "1000000",
+                    "max": "100000000"
+                },
+                "mu3": {
+                    "min": "1000000",
+                    "max": "100000000"
+                },
+                "mu4": {
+                    "min": "1000",
+                    "max": "10000"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "linearelasticity3d-0-1-1_mesh_p1.json",
+        "database-filename": "linearelasticity3d-0-1-1-elements_p0.crbdb",
+        "dimension": "15"
+    },
+    "crb": {
+        "dimension": "15",
+        "name": "linearelasticity3d-0-1-1",
+        "database-filename": "linearelasticity3d-0-1-1.crbdb",
+        "has-solve-dual-problem": "true"
+    },
+    "scmA": {
+        "name": "linearelasticity3d-0_scmA",
+        "database-filename": "linearelasticity3d-0_scmA_p0.crbdb"
+    }
+}

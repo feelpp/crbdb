@@ -1,0 +1,20 @@
+{
+    "mesh": {
+        "h5": "thermalbuilding-0-1-1_mesh_p1.h5",
+        "partition": {
+            "n": "1"
+        },
+        "physicals": {
+            "air": "3 3",
+            "exterior-walls": "5 2",
+            "front-door": "4 2",
+            "heater-bathroom": "10 2",
+            "heater-bedroom1": "8 2",
+            "heater-bedroom2": "9 2",
+            "heater-kitchen": "6 2",
+            "heater-livingroom": "7 2",
+            "internal-doors": "2 3",
+            "internal-walls": "1 3"
+        }
+    }
+}

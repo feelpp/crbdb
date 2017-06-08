@@ -1,0 +1,12 @@
+{
+    "mesh": {
+        "h5": "benchmarkgrepl-linear-elliptic1-0-1-2_mesh_p1.h5",
+        "partition": {
+            "n": "1"
+        },
+        "physicals": {
+            "Omega": "2 2",
+            "boundaries": "1 1"
+        }
+    }
+}

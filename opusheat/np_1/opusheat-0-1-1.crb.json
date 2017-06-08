@@ -1,0 +1,87 @@
+{
+    "crbmodel": {
+        "model-name": "OpusHeat",
+        "parameter_space": {
+            "dimension": "6",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3",
+                "mu4",
+                "mu5"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "1",
+                    "max": "3"
+                },
+                "mu1": {
+                    "min": "1",
+                    "max": "3"
+                },
+                "mu2": {
+                    "min": "0.10000000000000001",
+                    "max": "5"
+                },
+                "mu3": {
+                    "min": "10000",
+                    "max": "1000000"
+                },
+                "mu4": {
+                    "min": "10000",
+                    "max": "1000000"
+                },
+                "mu5": {
+                    "min": "1",
+                    "max": "30"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": [
+                "1"
+            ],
+            "mMaxF": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "opusheat-0-1-1_mesh_p1.json",
+        "database-filename": "opusheat-0-1-1-elements_p0.crbdb",
+        "dimension": "30"
+    },
+    "crb": {
+        "dimension": "30",
+        "name": "opusheat-0-1-1",
+        "database-filename": "opusheat-0-1-1.crbdb",
+        "has-solve-dual-problem": "true"
+    },
+    "scmA": {
+        "name": "opusheat-0_scmA",
+        "database-filename": "opusheat-0_scmA_p0.crbdb"
+    },
+    "scmM": {
+        "name": "opusheat-0_scmM",
+        "database-filename": "opusheat-0_scmM_p0.crbdb"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "crbmodel": {
+        "model-name": "ThermalBuilding",
+        "parameter_space": {
+            "dimension": "7",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3",
+                "mu4",
+                "mu5",
+                "mu6"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "300",
+                    "max": "340"
+                },
+                "mu1": {
+                    "min": "300",
+                    "max": "340"
+                },
+                "mu2": {
+                    "min": "300",
+                    "max": "340"
+                },
+                "mu3": {
+                    "min": "300",
+                    "max": "340"
+                },
+                "mu4": {
+                    "min": "300",
+                    "max": "340"
+                },
+                "mu5": {
+                    "min": "270",
+                    "max": "290"
+                },
+                "mu6": {
+                    "min": "0.14000000000000001",
+                    "max": "0.28999999999999998"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "thermalbuilding-0-1-1_mesh_p1.json",
+        "database-filename": "thermalbuilding-0-1-1-elements_p0.crbdb",
+        "dimension": "7"
+    },
+    "crb": {
+        "dimension": "7",
+        "name": "thermalbuilding-0-1-1",
+        "database-filename": "thermalbuilding-0-1-1.crbdb",
+        "has-solve-dual-problem": "true"
+    },
+    "scmA": {
+        "name": "thermalbuilding-0_scmA",
+        "database-filename": "thermalbuilding-0_scmA_p0.crbdb"
+    }
+}
