@@ -76,18 +76,19 @@
     "reduced-basis-space": {
         "mesh-filename": "heat3d_mesh_p1.json",
         "database-filename": "heat3d.elements_p0.crbdb",
-        "dimension": "14",
+        "dimension": "15",
         "mesh-context": "1280",
         "finite-element-space": {
-            "dimension": "36817",
+            "dimension": "148535",
             "basis-name": "lagrange"
         }
     },
     "crb": {
-        "dimension": "14",
+        "dimension": "15",
         "name": "heat3d",
         "database-filename": "heat3d.crb.crbdb",
         "has-solve-dual-problem": "true",
+        "output-index": "1",
         "error-type": "1"
     },
     "scmA": {
