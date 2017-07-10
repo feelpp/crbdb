@@ -1,0 +1,75 @@
+{
+    "crbmodel": {
+        "name": "heat1d",
+        "parameter_space": {
+            "dimension": "4",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "0.20000000000000001",
+                    "max": "50"
+                },
+                "mu1": {
+                    "min": "0.20000000000000001",
+                    "max": "50"
+                },
+                "mu2": {
+                    "min": "0.01",
+                    "max": "5"
+                },
+                "mu3": {
+                    "min": "0.10000000000000001",
+                    "max": "5"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "specifity-of-model": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "heat1d_mesh_p1.json",
+        "database-filename": "heat1d.elements_p0.crbdb",
+        "dimension": "6",
+        "mesh-context": "7",
+        "finite-element-space": {
+            "dimension": "71",
+            "basis-name": "lagrange"
+        }
+    },
+    "crb": {
+        "dimension": "6",
+        "name": "heat1d",
+        "database-filename": "heat1d.crb.crbdb",
+        "has-solve-dual-problem": "true",
+        "output-index": "1",
+        "error-type": "1"
+    },
+    "scmA": {
+        "name": "heat1d",
+        "database-filename": "heat1d.scma.crbdb"
+    }
+}
