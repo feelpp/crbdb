@@ -1,4 +1,5 @@
 {
+    "uuid": "30f62cb0-1e2c-48f4-87c4-c217574e440c",
     "crbmodel": {
         "name": "heat1d",
         "parameter_space": {
