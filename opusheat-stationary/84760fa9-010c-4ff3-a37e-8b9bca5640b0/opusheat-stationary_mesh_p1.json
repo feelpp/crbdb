@@ -1,0 +1,24 @@
+{
+    "mesh": {
+        "h5": "opusheat-stationary_mesh_p1.h5",
+        "partition": {
+            "n": "1"
+        },
+        "physicals": {
+            "AIR": "12 2",
+            "Gamma_1": "1 1",
+            "Gamma_2": "2 1",
+            "Gamma_3_AIR3": "8 1",
+            "Gamma_3_AIR4": "7 1",
+            "Gamma_3_PCB": "9 1",
+            "Gamma_4_AIR1": "5 1",
+            "Gamma_4_AIR4": "6 1",
+            "Gamma_4_PCB": "10 1",
+            "Gamma_IC1_PCB": "3 1",
+            "Gamma_IC2_PCB": "4 1",
+            "IC1": "13 2",
+            "IC2": "14 2",
+            "PCB": "11 2"
+        }
+    }
+}

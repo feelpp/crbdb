@@ -1,0 +1,92 @@
+{
+    "uuid": "84760fa9-010c-4ff3-a37e-8b9bca5640b0",
+    "crbmodel": {
+        "name": "opusheat-stationary",
+        "parameter_space": {
+            "dimension": "6",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3",
+                "mu4",
+                "mu5"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "1",
+                    "max": "3"
+                },
+                "mu1": {
+                    "min": "1",
+                    "max": "3"
+                },
+                "mu2": {
+                    "min": "0.10000000000000001",
+                    "max": "5"
+                },
+                "mu3": {
+                    "min": "10000",
+                    "max": "1000000"
+                },
+                "mu4": {
+                    "min": "10000",
+                    "max": "1000000"
+                },
+                "mu5": {
+                    "min": "1",
+                    "max": "30"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "specifity-of-model": {
+            "surface-measure-IC2": "7.9999999999999966e-05"
+        },
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "opusheat-stationary_mesh_p1.json",
+        "database-filename": "opusheat-stationary.elements_p0.crbdb",
+        "dimension": "30",
+        "mesh-context": "7",
+        "finite-element-space": {
+            "dimension": "33141",
+            "basis-name": "lagrange"
+        }
+    },
+    "crb": {
+        "dimension": "30",
+        "name": "opusheat-stationary",
+        "database-filename": "opusheat-stationary.crb.crbdb",
+        "has-solve-dual-problem": "true",
+        "output-index": "1",
+        "error-type": "1"
+    },
+    "scmA": {
+        "name": "opusheat-stationary",
+        "database-filename": "opusheat-stationary.scma.crbdb"
+    }
+}
