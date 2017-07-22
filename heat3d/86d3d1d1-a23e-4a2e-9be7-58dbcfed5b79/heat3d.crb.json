@@ -1,0 +1,99 @@
+{
+    "uuid": "86d3d1d1-a23e-4a2e-9be7-58dbcfed5b79",
+    "crbmodel": {
+        "name": "heat3d",
+        "parameter_space": {
+            "dimension": "8",
+            "names": [
+                "mu0",
+                "mu1",
+                "mu2",
+                "mu3",
+                "mu4",
+                "mu5",
+                "mu6",
+                "mu7"
+            ],
+            "parameters": {
+                "mu0": {
+                    "min": "100",
+                    "max": "200"
+                },
+                "mu1": {
+                    "min": "100",
+                    "max": "200"
+                },
+                "mu2": {
+                    "min": "100",
+                    "max": "200"
+                },
+                "mu3": {
+                    "min": "100",
+                    "max": "200"
+                },
+                "mu4": {
+                    "min": "29300",
+                    "max": "62000"
+                },
+                "mu5": {
+                    "min": "29300",
+                    "max": "62000"
+                },
+                "mu6": {
+                    "min": "29300",
+                    "max": "62000"
+                },
+                "mu7": {
+                    "min": "-1000",
+                    "max": "1000"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": "",
+        "specifity-of-model": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "heat3d_mesh_p1.json",
+        "database-filename": "heat3d.elements_p0.crbdb",
+        "dimension": "17",
+        "mesh-context": "1280",
+        "finite-element-space": {
+            "dimension": "148535",
+            "basis-name": "lagrange"
+        }
+    },
+    "crb": {
+        "dimension": "17",
+        "name": "heat3d",
+        "database-filename": "heat3d.crb.crbdb",
+        "has-solve-dual-problem": "true",
+        "output-index": "1",
+        "error-type": "1"
+    },
+    "scmA": {
+        "name": "heat3d",
+        "database-filename": "heat3d.scma.crbdb"
+    }
+}
