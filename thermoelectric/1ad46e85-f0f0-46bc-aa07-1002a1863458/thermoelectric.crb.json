@@ -1,0 +1,84 @@
+{
+    "uuid": "1ad46e85-f0f0-46bc-aa07-1002a1863458",
+    "crbmodel": {
+        "name": "thermoelectric",
+        "parameter_space": {
+            "dimension": "5",
+            "names": [
+                "Tw",
+                "current",
+                "h",
+                "k",
+                "sigma"
+            ],
+            "parameters": {
+                "Tw": {
+                    "min": "290",
+                    "max": "310"
+                },
+                "current": {
+                    "min": "0.050000000000000003",
+                    "max": "0.10000000000000001"
+                },
+                "h": {
+                    "min": "0.050000000000000003",
+                    "max": "0.10000000000000001"
+                },
+                "k": {
+                    "min": "0.34999999999999998",
+                    "max": "0.40000000000000002"
+                },
+                "sigma": {
+                    "min": "57500",
+                    "max": "58500"
+                }
+            }
+        },
+        "additional-model-files": "",
+        "eim": {
+            "eim_gradgrad": {
+                "database-filename": "eim\/eim_gradgrad.eim.crbdb"
+            }
+        },
+        "specifity-of-model": "",
+        "affine-decomposition": {
+            "mMaxA": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "mMaxM": "",
+            "mMaxF": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ]
+            ],
+            "mMaxLinearDecompositionA": ""
+        }
+    },
+    "reduced-basis-space": {
+        "mesh-filename": "thermoelectric_mesh_p1.json",
+        "database-filename": "thermoelectric.elements_p0.crbdb",
+        "dimension": "10",
+        "mesh-context": "7",
+        "finite-element-space": {
+            "dimension": "18034",
+            "basis-name": "lagrange_lagrange"
+        }
+    },
+    "crb": {
+        "dimension": "10",
+        "name": "thermoelectric",
+        "database-filename": "thermoelectric.crb.crbdb",
+        "has-solve-dual-problem": "false",
+        "output-index": "0",
+        "error-type": "2"
+    }
+}
